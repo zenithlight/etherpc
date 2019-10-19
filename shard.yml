@@ -1,0 +1,14 @@
+name: etherpc
+version: 0.1.0
+
+authors:
+  - Alexis Anand <alexis@alexisanand.com>
+
+description: |
+  Idiomatic Ethereum/Infura JSON-RPC client for Crystal, supporting WebSockets and subscriptions.
+
+license: MIT
+
+targets:
+    etherpc:
+        main: src/etherpc.cr
