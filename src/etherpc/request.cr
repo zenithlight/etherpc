@@ -5,7 +5,7 @@ require "json"
 module Etherpc
     abstract struct Request
         abstract def method_name : String
-        abstract def get_params : Array(JSON::Any)
+        abstract def get_params : JSON::Any
 
         # Abstract class methods not allowed (yet?)
         # abstract def deserialize_response(response : JSON::Any)

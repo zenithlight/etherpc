@@ -10,9 +10,9 @@ module Etherpc::Requests
             @method_name = "eth_getBalance"
         end
 
-        def get_params : Array(JSON::Any)
+        def get_params : JSON::Any
             # TODO: better handling for default block parameter
-            [JSON::Any.new(@address), JSON::Any.new("latest")]
+            JSON::Any.new [JSON::Any.new(@address), JSON::Any.new("latest")]
         end
 
         def GetBalance.deserialize_response(response : JSON::Any)
