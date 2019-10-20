@@ -10,8 +10,8 @@ module Etherpc::Requests
             @method_name = "eth_gasPrice"
         end
 
-        def get_params : Array(JSON::Any)
-            [] of JSON::Any
+        def get_params : JSON::Any
+            JSON::Any.new([] of JSON::Any)
         end
 
         def GasPrice.deserialize_response(response : JSON::Any)
