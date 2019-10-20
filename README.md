@@ -30,8 +30,7 @@ Examples can be found in the [examples](examples) folder.
 To run them, do:
 
 ```
-$ crystal run examples/basic.cr -- [endpoint] [address]
-$ crystal run examples/subscription.cr -- [endpoint]
+$ crystal run examples/basic.cr -- [endpoint] [address] [token address]
 ```
 
 ## Roadmap
